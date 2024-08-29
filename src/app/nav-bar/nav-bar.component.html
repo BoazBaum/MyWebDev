@@ -1,0 +1,22 @@
+<!-- 
+<div class="navbar container">
+    <select id="languageSelect" (change)="onLanguageSelect($event)">
+        <option value="he">עברית <img src="../../assets/israel-flag.png" alt=""></option>
+        <option value="en">English</option>
+    </select>
+</div> -->
+
+<div class="dropdown container">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" >
+        <img [src]="selectedFlag" alt="" class="flag-icon"> {{'Language' | translate}}
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li class="dropdown-item" (click)="onLanguageSelect('he')">
+        <img src="../../assets/israel-flag.png" alt="Hebrew" class="flag-icon"> עברית
+      </li>
+      <li class="dropdown-item" (click)="onLanguageSelect('en')">
+        <img src="../../assets/england-flag.png" alt="English" class="flag-icon"> English
+      </li>
+    </ul>
+</div>
+  
