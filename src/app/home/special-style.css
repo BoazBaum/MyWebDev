@@ -6,6 +6,9 @@
     transition: all 0.5s;
   }
 
+  .rtl-transform {
+    transform: translateX(100%);
+  } 
   
   @media(min-width: 500px){
     .ltr-transform {
