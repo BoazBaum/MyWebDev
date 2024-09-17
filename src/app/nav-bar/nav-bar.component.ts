@@ -29,6 +29,9 @@ export class NavBarComponent {
     } else if (language === 'en') {
       this.selectedFlag = '../../assets/england-flag.png';
     }
+    else{
+      this.selectedFlag = '../../assets/Flag_of_Spain 1.png';
+    }
   }
   adjustDirection(language: string) {
     const isRtl = RTL_LANGUAGES.includes(language);

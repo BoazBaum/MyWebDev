@@ -5,5 +5,7 @@
 .flag-icon{
     width: 20px;
     height: auto;
-
+}
+.dropdown-item{
+    cursor: pointer;
 }
