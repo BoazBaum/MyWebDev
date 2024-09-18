@@ -3,7 +3,7 @@
 import os
 from typing import Tuple
 import openai
-from groq import Groq
+from groq import Groq # type: ignore
 from dotenv import load_dotenv
 
 load_dotenv()

@@ -1,8 +1,11 @@
 
+.body{
+  background-color: #F1FFF1;
+}
 .open-screen {
     /* min-height: 100vh; */
     
-    background-image: linear-gradient(#028C00 0% 1%, #83dd82 30%, #ddffdc 70%);
+    background-image: linear-gradient(#028C00 0% 1%, #83dd82, #F1FFF1 90%);
   }
 
 
@@ -18,9 +21,7 @@
     color: #1A221B;
     
   }
-.test{
-  height: 1px;
-}
+
 .main-img{
     height: 27rem;
 }
@@ -41,15 +42,15 @@
 }
 
 .frame {
-  height: 15rem;
-  width: 20rem;
+  height: 20rem;
+  
 
 }
 .background-frame1{
-  background-image: linear-gradient(-35deg, #FFFFFF 35%, #DDFFDC, #FFFFFF 65%)
+  background-image: linear-gradient(-35deg, #F1FFF1 35%, #DDFFDC, #F1FFF1 65%)
 }
 .background-frame2{
-  background-image: linear-gradient(-35deg, #FFFFFF 35%, #FFFEE0, #FFFFFF 65%)
+  background-image: linear-gradient(-35deg, #F1FFF1 35%, #FFFEE0, #F1FFF1 65%)
 }
 
 @media (max-width: 500px) {
