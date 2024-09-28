@@ -1,79 +1,35 @@
 
 .body{
-  background-color: #F1FFF1;
-}
-.open-screen {
-    /* min-height: 100vh; */
-    
-    background-image: linear-gradient(#028C00 0% 1%, #83dd82, #F1FFF1 90%);
-  }
-
-
-.open-screen-content {
-  min-height: 100vh;
+  background-color: #EDFFFD;
 }
 
-#languageSelect{
-    height: 30px;
-    
-}
-  .text-open-screen{
-    color: #1A221B;
-    
-  }
-
-.main-img{
-    height: 27rem;
-}
-
-@media (max-width: 1300px) {
-    .main-img {
-        height: 20rem; /* Adjust the height for phones */
-    }
-}
-
-.img2{
-    height: 10rem;
-}
-
-.frame {
-  height: 20rem;
-  
-
-}
-.background-frame1{
-  background-image: linear-gradient(-35deg, #F1FFF1 35%, #DDFFDC, #F1FFF1 65%)
-}
-.background-frame2{
-  background-image: linear-gradient(-35deg, #F1FFF1 35%, #FFFEE0, #F1FFF1 65%)
-}
-
-@media (max-width: 500px) {
-    .main-img {
-        height: 12rem; /* Adjust the height for phones */
-    }
-}
-
-  .logos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 50px;
-    margin: 1px;
-  }
-
-  .desigen-screens{
-    white-space: nowrap;
-    display: flex;
-    position: relative;
-  }
-
-  .desigen-screens img{
-    margin: 50px;
-    height: 10rem;
-  }
 body{
   overflow-x: hidden;
 }
 
+
+/* 
+
+.rtl-transform {
+  transform: translateX(100%);
+} 
+
+@media(min-width: 500px){
+  .ltr-transform {
+    transform: translateX(-100%);
+  }
+}
+
+@media(min-width: 500px){
+  .rtl-transform {
+    transform: translateX(100%);
+  } 
+} */
+
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 

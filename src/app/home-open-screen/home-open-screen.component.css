@@ -1,0 +1,43 @@
+
+.open-screen {
+    /* min-height: 100vh; */
+    
+    background-image: linear-gradient(#016157, #02AA99 25%, #EDFFFD 85%);
+  }
+
+
+.open-screen-content {
+  min-height: 100vh;
+}
+
+  .text-open-screen{
+    color: #021614;
+    
+  }
+
+  @media(max-width:500px){
+    .text-open-screen{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+  }
+  /* @media(max-width:600px){
+    .content{
+        align-items: center;
+      }
+  } */
+
+.main-img{
+    height: 27rem;
+}
+
+@media (max-width: 1300px) {
+    .main-img {
+        height: 20rem; /* Adjust the height for phones */
+    }
+}
+@media (max-width: 500px) {
+    .main-img {
+        height: 12rem; /* Adjust the height for phones */
+    }
+}

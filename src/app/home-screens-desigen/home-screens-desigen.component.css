@@ -1,0 +1,55 @@
+.desigen-screens{
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+    direction: ltr;
+  }
+
+  .desigen-screens img{
+    margin: 50px;
+    height: 10rem;
+  }
+@media (max-width: 500px){
+  .desigen-screens img{
+    margin: 10px;
+    height: 7rem;
+    }
+}
+
+
+.desigen-screens-slide {
+    animation: slide 10s infinite linear; 
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .desigen-screens:before,
+  .desigen-screens:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  @media (max-width: 500px) {
+    .desigen-screens:before,
+    .desigen-screens:after{
+      width: 0px;
+    }
+  }
+  .desigen-screens:before{
+    background: linear-gradient(to left, rgba(241, 255, 241, 0),  #F1FFF1);
+    left: 0;
+  }
+  .desigen-screens:after{
+    background: linear-gradient(to right, rgba(241, 255, 241, 0),  #F1FFF1);
+    right: 0;
+  }

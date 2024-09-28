@@ -5,12 +5,12 @@ import { RTL_LANGUAGES } from '../language-settings';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', './special-style.css']
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
 
   // You can define the observer as a class property.
-  private observer: IntersectionObserver;
+  //private observer: IntersectionObserver;
 
   constructor(private translate: TranslateService) {
     
@@ -19,15 +19,15 @@ export class HomeComponent {
      this.adjustDirection(defaultLanguage);
 
     // Initialize the IntersectionObserver in the constructor.
-    this.observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry: IntersectionObserverEntry) => {
-        if (entry.isIntersecting) {
-          (entry.target as HTMLElement).classList.add('show');
-        } else {
-          (entry.target as HTMLElement).classList.remove('show');
-        }
-      });
-    });
+    // this.observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+    //   entries.forEach((entry: IntersectionObserverEntry) => {
+    //     if (entry.isIntersecting) {
+    //       (entry.target as HTMLElement).classList.add('show');
+    //     } else {
+    //       (entry.target as HTMLElement).classList.remove('show');
+    //     }
+    //   });
+    // });
   }
 
   // onLanguageSelect(event: Event) {
@@ -56,6 +56,6 @@ export class HomeComponent {
   ngAfterViewInit(): void {
     // Select the elements and observe them after the view is initialized.
     const hiddenElements: NodeListOf<Element> = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el: Element) => this.observer.observe(el));
+    //hiddenElements.forEach((el: Element) => this.observer.observe(el));
   }
 }

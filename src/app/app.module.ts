@@ -8,6 +8,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HomeOpenScreenComponent } from './home-open-screen/home-open-screen.component';
+import { HomeProccesseWebBuildComponent } from './home-proccesse-web-build/home-proccesse-web-build.component';
+import { HomeScreensDesigenComponent } from './home-screens-desigen/home-screens-desigen.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -18,7 +22,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeOpenScreenComponent,
+    HomeProccesseWebBuildComponent,
+    HomeScreensDesigenComponent,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,  // Add HttpClientModule
