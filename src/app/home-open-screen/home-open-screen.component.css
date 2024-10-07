@@ -19,7 +19,7 @@
     .text-open-screen{
         padding-left: 30px;
         padding-right: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 120px;
       }
   }
   
@@ -35,7 +35,7 @@
 
 .content {
     flex-direction: column; /* Stack elements vertically */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   
     @media (min-width: 480px) { /* Adjust breakpoint as needed */
       flex-direction: row; /* Switch to horizontal layout for larger screens */
