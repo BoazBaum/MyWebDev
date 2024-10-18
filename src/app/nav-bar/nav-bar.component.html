@@ -6,9 +6,24 @@
     </select>
 </div> -->
 
-<div class="dropdown container">
-    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" >
-        <img [src]="selectedFlag" alt="" class="flag-icon"> {{'Language' | translate}}
+<header class="d-flex align-items-center nav-bar">
+
+  <input type="checkbox" id="chk1">
+  
+  <div class="menu">
+    <label for="chk1">
+      <i class="bx bx-menu">
+        
+      </i>
+
+    </label>
+  </div>
+  <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+
+  <div class="dropdown">
+    <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" >
+        <img [src]="selectedFlag" alt="" class="flag-icon mx-2">
+        <div class=" vl"></div>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <li class="dropdown-item" (click)="onLanguageSelect('he')">
@@ -21,5 +36,17 @@
         <img src="../../assets/Flag_of_Spain 1.png" alt="Spanish" class="flag-icon"> Spanish
       </li>
     </ul>
-</div>
-  
+  </div>
+
+  <ul class="menu-list d-flex container justify-content-center open">
+    <li class="mx-4 ">
+      {{'About' | translate}}
+    </li>
+    <li class="mx-4">
+      {{'About' | translate}}
+    </li>
+    <li class="mx-4">
+      {{'About' | translate}}
+    </li>
+  </ul>
+</header>

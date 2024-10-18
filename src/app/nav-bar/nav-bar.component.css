@@ -1,6 +1,24 @@
 
-.btn{
-    background-color: #5FE3D6;
+.nav-bar{
+    height: 60px;
+    padding:0 100px;
+    transition: top 3s ease;
+}
+
+@media(max-width: 480px){
+    .nav-bar{
+        padding:0 30px;
+    }
+}
+button.btn{
+    outline: none;
+    color: #B3FDF0;
+}
+.vl{
+    border-left: 1.5px solid #B3FDF0;
+    height: 20px;
+    margin-left: 22px;
+    margin-right: 22px;
 }
 .flag-icon{
     width: 20px;
@@ -8,4 +26,100 @@
 }
 .dropdown-item{
     cursor: pointer;
+}
+.menu-list li{
+    color: #B3FDF0;
+    font-style: italic;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    cursor: pointer;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.menu-list li:hover{
+    text-decoration: underline;
+}
+
+#menu-icon{
+color: #B3FDF0;
+font-size: 35px;
+cursor: pointer;
+display: none;
+}
+
+/* @media(max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .menu-list{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 30vh;
+        background: #00373284;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px, 20px;
+        transition: all .55s ease;
+        
+    }
+    .menu-list li{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+    .menu-list.open{
+        right: 0rem;
+    }
+} */
+
+
+#chk1{
+    display: none;
+}
+i{
+    color: #B3FDF0;
+    cursor: pointer;
+}
+
+header .menu{
+    font-size: 2.5rem;
+    display: none;
+}
+
+@media(max-width:768px){
+    .menu-list{
+        position: fixed;
+        top: 7.8%;
+        right: -100%;
+        background: #00373284;
+        height: calc(100vh);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+        
+    }
+    .menu-list li{
+        padding: 3.5rem 0;
+        font-size: 30px;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ .menu-list{
+        right: 0;
+    }
+}
+
+@media(max-width:480px){
+    .menu-list{
+        width: 100%;
+    }
 }

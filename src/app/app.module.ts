@@ -14,6 +14,7 @@ import { HomeScreensDesigenComponent } from './home-screens-desigen/home-screens
 import { FooterComponent } from './footer/footer.component';
 
 
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }

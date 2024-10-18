@@ -1,7 +1,7 @@
 
 .open-screen {
     /* min-height: 100vh; */
-    
+    padding-top: 100px;
     background-image: linear-gradient(#016157, #02AA99 25%, #EDFFFD 85%);
   }
 
@@ -10,6 +10,24 @@
   min-height: 100vh;
 }
 
+.back-img{
+    width: 100%;
+    opacity: 30%;
+    z-index: 0;
+}
+/* .open-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/lovepik-business-men-work-in-the-office-picture_500687527.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0; 
+    opacity: 10%;
+} */
   .text-open-screen{
     color: #021614;
   }
@@ -23,14 +41,21 @@
       }
   }
   
-  /* @media(max-width:600px){
-    .content{
-        align-items: center;
-      }
-  } */
+
+.fixed-navbar{
+    background-color: #00373284;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-bottom: 100px;
+}
+
 
 .main-img{
     height: 27rem;
+    z-index: 100;
+    opacity: 100%;
 }
 
 .content {
