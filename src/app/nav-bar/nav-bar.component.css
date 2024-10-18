@@ -1,15 +1,28 @@
 
 .nav-bar{
     height: 60px;
-    padding:0 100px;
+    padding:0 70px;
     transition: top 3s ease;
+}
+
+@media(max-width: 768px){
+    .nav-bar{
+        padding: 30px;
+    }
 }
 
 @media(max-width: 480px){
     .nav-bar{
-        padding:0 30px;
+        padding: 10px;
     }
 }
+
+@media(max-width:480px){
+    .dropdown{
+        margin: 0 20px;
+    }
+}
+
 button.btn{
     outline: none;
     color: #B3FDF0;
@@ -42,41 +55,6 @@ button.btn{
     text-decoration: underline;
 }
 
-#menu-icon{
-color: #B3FDF0;
-font-size: 35px;
-cursor: pointer;
-display: none;
-}
-
-/* @media(max-width: 990px){
-    #menu-icon{
-        display: block;
-    }
-    .menu-list{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 300px;
-        height: 30vh;
-        background: #00373284;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 50px, 20px;
-        transition: all .55s ease;
-        
-    }
-    .menu-list li{
-        display: block;
-        margin: 7px 0;
-        margin-left: 0;
-    }
-    .menu-list.open{
-        right: 0rem;
-    }
-} */
-
 
 #chk1{
     display: none;
@@ -86,7 +64,7 @@ i{
     cursor: pointer;
 }
 
-header .menu{
+header .menu-icon{
     font-size: 2.5rem;
     display: none;
 }
@@ -94,24 +72,25 @@ header .menu{
 @media(max-width:768px){
     .menu-list{
         position: fixed;
-        top: 7.8%;
+        top: 0%;
         right: -100%;
         background: #00373284;
         height: calc(100vh);
         width: 50%;
         flex-direction: column;
         align-items: center;
-        transition: right 0.5s linear;
-        
+        transition: right 0.3s linear;
     }
     .menu-list li{
-        padding: 3.5rem 0;
+        padding: 3rem 0;
         font-size: 30px;
+        
     }
-    header .menu{
+    header .menu-icon{
         display: block;
-        width: 100px;
+        width: 50px;
         text-align: center;
+        z-index: 1;
     }
     #chk1:checked ~ .menu-list{
         right: 0;
@@ -121,6 +100,6 @@ header .menu{
 @media(max-width:480px){
     .menu-list{
         width: 100%;
-        top: 8.8%;
+        top: 0%;
     }
 }
