@@ -40,6 +40,9 @@ button.btn{
 .dropdown-item{
     cursor: pointer;
 }
+.menu-list{
+    justify-content: center;
+}
 .menu-list li{
     color: #B3FDF0;
     font-style: italic;
@@ -64,7 +67,12 @@ i{
     cursor: pointer;
 }
 
-header .menu-icon{
+header .menu-icon1 {
+    font-size: 2.5rem;
+    display: none;
+}
+
+header .menu-icon2 {
     font-size: 2.5rem;
     display: none;
 }
@@ -79,21 +87,36 @@ header .menu-icon{
         width: 50%;
         flex-direction: column;
         align-items: center;
+        justify-content: start;
         transition: right 0.3s linear;
+        padding-top: 100px;
     }
     .menu-list li{
         padding: 3rem 0;
         font-size: 30px;
         
     }
-    header .menu-icon{
+    header .menu-icon1{
         display: block;
+        width: 50px;
+        text-align: center;
+        z-index: 1;
+    }
+    header .menu-icon2{
+        display: none;
         width: 50px;
         text-align: center;
         z-index: 1;
     }
     #chk1:checked ~ .menu-list{
         right: 0;
+        
+    }
+    #chk1:checked ~ .menu-icon1{
+        display: none;
+    }
+    #chk1:checked ~ .menu-icon2{
+        display: block;
     }
 }
 

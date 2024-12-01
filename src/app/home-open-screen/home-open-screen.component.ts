@@ -18,8 +18,10 @@ export class HomeOpenScreenComponent {
       // Change the condition as per your requirement (e.g., scroll position > 50)
       if (scrollPosition > 60) {
         this.isFixed = true;
+        document.body.style.paddingTop = '60px';
       } else {
         this.isFixed = false;
+        document.body.style.paddingTop = '0';
       }
     }
 }

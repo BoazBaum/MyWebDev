@@ -1,7 +1,6 @@
 
 .open-screen {
-    /* min-height: 100vh; */
-    padding-top: 100px;
+    min-height: 100vh;
     background-image: linear-gradient(#016157, #02AA99 25%, #EDFFFD 85%);
   }
 
@@ -15,7 +14,7 @@
     opacity: 30%;
     z-index: 0;
 }
-/* .open-screen::before {
+.open-screen::before {
     content: '';
     position: absolute;
     top: 0;
@@ -27,7 +26,7 @@
     background-position: center;
     z-index: 0; 
     opacity: 10%;
-} */
+}
   .text-open-screen{
     color: #021614;
   }
@@ -47,8 +46,8 @@
     z-index: 2;
     position: fixed;
     width: 100%;
-    top: 0;
-    margin-bottom: 100px;
+    top: 0%;
+    margin-bottom: 100rem;
 }
 
 
