@@ -2,8 +2,8 @@
 .open-screen {
     min-height: 100vh;
     background-image: linear-gradient(#016157, #02AA99 25%, #EDFFFD 85%);
+    
   }
-
 
 .open-screen-content {
   min-height: 100vh;
@@ -14,7 +14,7 @@
     opacity: 30%;
     z-index: 0;
 }
-.open-screen::before {
+/* .open-screen::before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,19 +26,13 @@
     background-position: center;
     z-index: 0; 
     opacity: 10%;
-}
+} */
   .text-open-screen{
-    color: #021614;
+    color: #016157;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 
-  @media(max-width:480px){
-    .text-open-screen{
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-bottom: 120px;
-      }
-  }
   
 
 .fixed-navbar{
@@ -47,9 +41,17 @@
     position: fixed;
     width: 100%;
     top: 0%;
-    margin-bottom: 100rem;
-}
-
+    
+    top: -100%;
+      /* Initially hide the navbar by moving it up */
+      transition: transform 2s ease, background-color 2s ease;
+      /* Smooth transition for appearance and color */
+    }
+    
+    .fixed-navbar.show {
+      top: 0px;
+      /* Slide the navbar into view */
+    }
 
 .main-img{
     height: 27rem;
@@ -60,12 +62,24 @@
 .content {
     flex-direction: column; /* Stack elements vertically */
     margin-bottom: 50px;
-  
-    @media (min-width: 480px) { /* Adjust breakpoint as needed */
-      flex-direction: row; /* Switch to horizontal layout for larger screens */
-      
-    }
+    flex-direction: row; /* Switch to horizontal layout for larger screens */
   }
+
+@media(max-width:480px) {
+  .text-open-screen {
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .main-img{
+    
+  }
+}
 
 @media (max-width: 1300px) {
     .main-img {

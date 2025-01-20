@@ -8,6 +8,10 @@
 
 <header class="d-flex align-items-center justify-content-between  nav-bar">
 
+      <div class="logo">
+        <img src="../../assets/Logo.png" alt="">
+      </div>
+
   <input type="checkbox" id="chk1">
   
   <div class="menu-icon1">
@@ -22,26 +26,10 @@
   </div>
   <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
 
-  <div class="dropdown">
-    <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" >
-        <img [src]="selectedFlag" alt="" class="flag-icon mx-2">
-        <div class=" vl"></div>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li class="dropdown-item" (click)="onLanguageSelect('he')">
-        <img src="../../assets/israel-flag.png" alt="Hebrew" class="flag-icon"> עברית
-      </li>
-      <li class="dropdown-item" (click)="onLanguageSelect('en')">
-        <img src="../../assets/england-flag.png" alt="English" class="flag-icon"> English
-      </li>
-      <li class="dropdown-item" (click)="onLanguageSelect('es')">
-        <img src="../../assets/Flag_of_Spain 1.png" alt="Spanish" class="flag-icon"> Spanish
-      </li>
-    </ul>
-  </div>
+
 
   <ul class="menu-list d-flex container open">
-    <li class="mx-4 ">
+    <li class="mx-4">
       {{'About' | translate}}
     </li>
     <li class="mx-4">
@@ -51,4 +39,24 @@
       {{'Protfolio' | translate}}
     </li>
   </ul>
+
+    <div class="dropdown">
+      <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton"
+        data-bs-toggle="dropdown">
+        <img [src]="selectedFlag" alt="" class="flag-icon mx-2">
+        <div class=" vl"></div>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li class="dropdown-item" (click)="onLanguageSelect('he')">
+          <img src="../../assets/israel-flag.png" alt="Hebrew" class="flag-icon"> עברית
+        </li>
+        <li class="dropdown-item" (click)="onLanguageSelect('en')">
+          <img src="../../assets/england-flag.png" alt="English" class="flag-icon"> English
+        </li>
+        <li class="dropdown-item" (click)="onLanguageSelect('es')">
+          <img src="../../assets/Flag_of_Spain 1.png" alt="Spanish" class="flag-icon"> Spanish
+        </li>
+      </ul>
+    </div>
+
 </header>

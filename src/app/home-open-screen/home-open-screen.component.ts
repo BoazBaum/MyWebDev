@@ -14,14 +14,28 @@ export class HomeOpenScreenComponent {
     @HostListener('window:scroll', [])
     onWindowScroll() {
       const scrollPosition = window.pageYOffset;
-  
+      const navbar = document.querySelector('.fixed-navbar') as HTMLElement;
+
+      const screenWidth = window.innerWidth;
+      let paddingTop = '90px' 
+      if(screenWidth <= 820 && screenWidth > 480)
+      {
+        paddingTop = '80px'
+      }
+      else if(screenWidth <= 480)
+      {
+        paddingTop = '60px'
+      }
+
       // Change the condition as per your requirement (e.g., scroll position > 50)
-      if (scrollPosition > 60) {
+      if (scrollPosition > parseInt(paddingTop)) {
         this.isFixed = true;
-        document.body.style.paddingTop = '60px';
+        document.body.style.paddingTop = paddingTop;
+        navbar?.classList.add('show');
       } else {
         this.isFixed = false;
         document.body.style.paddingTop = '0';
+        navbar?.classList.remove('show');
       }
     }
 }
