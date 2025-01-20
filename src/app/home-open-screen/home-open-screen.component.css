@@ -28,7 +28,7 @@
     opacity: 10%;
 } */
   .text-open-screen{
-    color: #016157;
+    color: #003732;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -65,30 +65,36 @@
     flex-direction: row; /* Switch to horizontal layout for larger screens */
   }
 
-@media(max-width:480px) {
-  .text-open-screen {
-    font-size: 20px;
-    margin-top: 80px;
-    text-align: center;
-  }
 
-  .content {
-    flex-direction: column-reverse;
-  }
 
-  .main-img{
+@media(max-width:1000px)
+{
+    .content {
+        flex-direction: column-reverse;
+      }
     
-  }
+      .text-open-screen {
+        text-align: center;
+        margin-top: 80px;
+      }
 }
-
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .main-img {
         height: 20rem; /* Adjust the height for phones */
     }
+.text-open-screen{
+  font-size: 30px;
 }
-@media (max-width: 520px) {
-    .main-img {
-        height: 12rem; /* Adjust the height for phones */
-        margin-left: 10px;
-    }
+}
+
+@media(max-width:480px) {
+  .text-open-screen {
+    font-size: 20px;
+
+  }
+
+  .main-img {
+    height: 12rem;
+    /* margin-top: 80px; */
+  }
 }
