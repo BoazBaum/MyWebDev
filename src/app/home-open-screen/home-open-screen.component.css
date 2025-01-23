@@ -33,7 +33,7 @@
       2px 4px 4px #D8FFFB,
       0 0 1rem #EDFFFD;
     font-family: rubik;
-    font-weight: 100;
+    font-weight: 400;
   }
  
   .bolds .check-img{
@@ -110,7 +110,6 @@
 @media(max-width:480px) {
   .text-open-screen {
     font-size: 25px;
-    font-weight: 400;
   }
     .bolds .check-img{
       width: 20px;
