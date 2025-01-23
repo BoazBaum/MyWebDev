@@ -1,5 +1,8 @@
 {
-  "welcome_message": "Get the website that will take your business to new heights, with a design that suits you exactly, and at an attractive price.",
+  "welcome_message": "A website that works for you",
+  "welcome_message bold1":"precise design",
+  "welcome_message bold2": "high results",
+  "welcome_message bold3": "affordable price",
   "Language": "Select Language",
   "About": "About Us"
 }

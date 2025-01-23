@@ -1,5 +1,8 @@
 {
-    "welcome_message": "קבל את האתר שירים את העסק שלך לגבהים, בעיצוב שמתאים בדיוק לך, ובמחיר אטרקטיבי",
+    "welcome_message": "אתר שעובד בשבילך",
+    "welcome_message bold1": "עיצוב מדויק",
+    "welcome_message bold2": "תוצאות גבוהות",
+    "welcome_message bold3": "מחיר נגיש",
     "Language": "בחר שפה",
     "About": "אודות",
     "Contact":"צור קשר",
