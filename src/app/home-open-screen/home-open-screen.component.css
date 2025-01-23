@@ -110,6 +110,7 @@
 @media(max-width:480px) {
   .text-open-screen {
     font-size: 25px;
+    font-weight: 400;
   }
     .bolds .check-img{
       width: 20px;

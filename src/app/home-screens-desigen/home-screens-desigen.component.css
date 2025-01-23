@@ -9,13 +9,6 @@
     margin: 50px;
     height: 10rem;
   }
-@media (max-width: 500px){
-  .desigen-screens img{
-    margin: 10px;
-    height: 7rem;
-    }
-}
-
 
 .desigen-screens-slide {
     animation: slide 10s infinite linear; 
@@ -39,17 +32,23 @@
     content: "";
     z-index: 1;
   }
-  @media (max-width: 500px) {
-    .desigen-screens:before,
-    .desigen-screens:after{
-      width: 0px;
-    }
-  }
+
   .desigen-screens:before{
-    background: linear-gradient(to left, rgba(241, 255, 241, 0),  #F1FFF1);
+    background: linear-gradient(to left, rgba(241, 255, 241, 0),  #EDFFFD);
     left: 0;
   }
   .desigen-screens:after{
-    background: linear-gradient(to right, rgba(241, 255, 241, 0),  #F1FFF1);
+    background: linear-gradient(to right, rgba(241, 255, 241, 0),  #EDFFFD);
     right: 0;
   }
+
+    @media (max-width: 480px) {
+      .desigen-screens img {
+        margin: 10px;
+        height: 7rem;
+      }
+      .desigen-screens:before,
+      .desigen-screens:after {
+        width: 0px;
+      }
+    }
