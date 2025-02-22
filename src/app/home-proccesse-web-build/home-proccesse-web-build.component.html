@@ -1,17 +1,29 @@
-<div class="logos text-center justify-content-center m-5 hidden">   
-    <div class="logo">
-        <img class="img" src="../../assets/Mind Map.png" alt="">
+<section class="process" [class.rtl]="isRtl" [class.ltr]="!isRtl">
+    <div class="container text-center">
+        <h2 class="section-title mb-5">{{ 'PROCESS.TITLE' | translate }}</h2>
+
+        <div class="d-flex justify-content-center">
+            <div class="row justify-content-center align-items-center gy-5" [ngClass]="isRtl ? 'flex-row-reverse' : ''">
+
+                <ng-container *ngFor="let step of processSteps; let i = index">
+                    <!-- Process Card -->
+                    <div class="col-md-5 col-lg-3 d-flex justify-content-center hidden">
+                        <div class="logo card shadow-lg p-4 text-center d-flex flex-column rounded-4 border-0">
+                            <img [src]="step.img" class="img-fluid mb-3 mx-auto d-block" [alt]="step.alt">
+                            <h3 class="fs-4 flex-grow-1">{{ step.title | translate }}</h3>
+                            <p class="text-muted flex-grow-1">{{ step.description | translate }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Arrow: Show only if NOT last in row -->
+                    <div *ngIf="(i + 1) % 3 !== 0 && i !== processSteps.length - 1"
+                        class="col-1 d-none d-lg-flex align-items-center justify-content-center hidden">
+                        <img class="arrow" src="../../assets/Arrow Proccess.png" alt="Arrow">
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+
     </div>
-    <div class="logo">
-        <img class="img" src="../../assets/Analyze on Screen.png" alt="">
-    </div>
-    <div class="logo">
-        <img class="img" src="../../assets/Building Website (1).png" alt="">
-    </div>
-    <div class="logo">
-        <img class="img" src="../../assets/Idea.png" alt="">
-    </div>
-    <div class="logo">
-        <img class="img" src="../../assets/Web Exploring.png" alt="">
-    </div>
-</div>
+</section>

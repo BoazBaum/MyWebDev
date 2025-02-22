@@ -9,11 +9,6 @@
   min-height: 100vh;
 }
 
-.back-img{
-    width: 100%;
-    opacity: 30%;
-    z-index: 0;
-}
 .open-screen::before {
     content: '';
     position: absolute;
@@ -50,15 +45,12 @@
     font-family: rubik;
   }
 
-
 .fixed-navbar{
     background-color: #00373284;
     z-index: 2;
     position: fixed;
     width: 100%;
-    top: 0%;
     
-    top: -100%;
       /* Initially hide the navbar by moving it up */
       transition: transform 2s ease, background-color 2s ease;
       /* Smooth transition for appearance and color */
@@ -71,8 +63,7 @@
 
 .main-img{
     height: 27rem;
-    z-index: 100;
-    opacity: 100%;
+    z-index: 2;
 }
 
 .content {

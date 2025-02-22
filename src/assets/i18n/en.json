@@ -4,5 +4,55 @@
   "welcome_message bold2": "high results",
   "welcome_message bold3": "affordable price",
   "Language": "Select Language",
-  "About": "About Us"
+  "About": "About Us",
+  "Contact": "Contact",
+  "Protfolio": "Our works",
+
+  "PROCESS": {
+    "TITLE": "Our work process",
+    "STEP1": {
+      "TITLE": "Expectations Coordination",
+      "DESCRIPTION": "Introductory meeting to understand the client's needs."
+    },
+    "STEP2": {
+      "TITLE": "Research and Planning",
+      "DESCRIPTION": "Understanding the market, choosing colors and style."
+    },
+    "STEP3": {
+      "TITLE": "User Experience Design",
+      "DESCRIPTION": "Wireframe Creation and Interface Design."
+    },
+    "STEP4": {
+      "TITLE": "Building and Development",
+      "DESCRIPTION": "Website Creation with WordPress and Elementor."
+    },
+    "STEP5": {
+      "TITLE": "Website launch",
+      "DESCRIPTION": "Testing, improvements and website launch."
+    }
+  },
+
+  "OUR_WORK": {
+    "TITLE": "Our Work",
+    "SITE1": {
+      "TITLE": "Computera site",
+      "DESCRIPTION": "A modern and responsive site with multiple pages"
+    },
+    "SITE2": {
+      "TITLE": "E-Commerce site",
+      "DESCRIPTION": "A professional web store with sleek design."
+    },
+    "SITE3": {
+      "TITLE": "DJ Portfolio",
+      "DESCRIPTION": "A website for a DJ showcasing music and events."
+    },
+    "SITE4": {
+      "TITLE": "Food Delivery Website",
+      "DESCRIPTION": "A fast and responsive online food ordering system."
+    },
+    "SITE5": {
+      "TITLE": "Real Estate Website",
+      "DESCRIPTION": "A modern real estate agency website for renting and buying properties."
+    }
+  }
 }

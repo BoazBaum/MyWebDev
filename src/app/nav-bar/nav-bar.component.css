@@ -1,12 +1,12 @@
 
 .nav-bar{
-    height: 90px;
+    height: 80px;
     padding:0 150px;
     
 }
 
 .logo img {
-    max-width: 11rem;
+    max-width: 9rem;
     margin: 20px;
 }
 
@@ -69,11 +69,11 @@ header .menu-icon2 {
 
     .nav-bar {
         padding: 30px;
-        height: 80px;
+        height: 70px;
     }
 
     .logo img {
-        max-width: 9rem;
+        max-width: 8rem;
         margin: 20px;
     }
 }

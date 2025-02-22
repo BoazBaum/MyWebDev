@@ -17,10 +17,10 @@ export class HomeOpenScreenComponent {
       const navbar = document.querySelector('.fixed-navbar') as HTMLElement;
 
       const screenWidth = window.innerWidth;
-      let paddingTop = '90px' 
+      let paddingTop = '80px' 
       if(screenWidth <= 820 && screenWidth > 480)
       {
-        paddingTop = '80px'
+        paddingTop = '70px'
       }
       else if(screenWidth <= 480)
       {

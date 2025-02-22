@@ -12,6 +12,7 @@ import { HomeOpenScreenComponent } from './home-open-screen/home-open-screen.com
 import { HomeProccesseWebBuildComponent } from './home-proccesse-web-build/home-proccesse-web-build.component';
 import { HomeScreensDesigenComponent } from './home-screens-desigen/home-screens-desigen.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeOurWorkComponent } from './home-our-work/home-our-work.component';
 
 
 
@@ -27,7 +28,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeOpenScreenComponent,
     HomeProccesseWebBuildComponent,
     HomeScreensDesigenComponent,
-    FooterComponent
+    FooterComponent,
+    HomeOurWorkComponent
   ],
   imports: [
     HttpClientModule,  // Add HttpClientModule

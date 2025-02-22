@@ -5,7 +5,53 @@
     "welcome_message bold3": "מחיר נגיש",
     "Language": "בחר שפה",
     "About": "אודות",
-    "Contact":"צור קשר",
-    "Protfolio": "העבודות שלנו"
+    "Contact": "צור קשר",
+    "Protfolio": "העבודות שלנו",
+    "PROCESS": {
+        "TITLE": "תהליך העבודה שלנו",
+        "STEP1": {
+            "TITLE": "תיאום ציפיות",
+            "DESCRIPTION": "פגישת היכרות להבנת צרכי הלקוח."
+        },
+        "STEP2": {
+            "TITLE": "מחקר ותכנון",
+            "DESCRIPTION": "הבנת השוק, בחירת צבעים וסגנון."
+        },
+        "STEP3": {
+            "TITLE": "עיצוב חוויית משתמש",
+            "DESCRIPTION": "יצירת Wireframe ועיצוב ממשק."
+        },
+        "STEP4": {
+            "TITLE": "בנייה ופיתוח",
+            "DESCRIPTION": "הקמת האתר עם WordPress ו-Elementor."
+        },
+        "STEP5": {
+            "TITLE": "השקת האתר",
+            "DESCRIPTION": "בדיקות, שיפורים והשקת האתר."
+        }
+    },
+
+    "OUR_WORK": {
+        "TITLE": "העבודות שלנו",
+        "SITE1": {
+            "TITLE": "Computera site",
+            "DESCRIPTION": "A modern and responsive site with multiple pages"
+        },
+        "SITE2": {
+            "TITLE": "E-Commerce site",
+            "DESCRIPTION": "A professional web store with sleek design."
+        },
+        "SITE3": {
+            "TITLE": "DJ Portfolio",
+            "DESCRIPTION": "A website for a DJ showcasing music and events."
+        },
+        "SITE4": {
+            "TITLE": "Food Delivery Website",
+            "DESCRIPTION": "A fast and responsive online food ordering system."
+        },
+        "SITE5": {
+            "TITLE": "Real Estate Website",
+            "DESCRIPTION": "A modern real estate agency website for renting and buying properties."
+        }
+    }
 }
-  
