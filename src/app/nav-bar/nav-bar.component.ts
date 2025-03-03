@@ -10,13 +10,6 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavBarComponent {
 
 
-  scrollToSection(sectionId: string): void {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
   selectedFlag: string;
 
   constructor(private translate: TranslateService) {
@@ -59,5 +52,10 @@ export class NavBarComponent {
   }
 
 
-
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

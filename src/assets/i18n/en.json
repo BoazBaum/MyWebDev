@@ -54,5 +54,12 @@
       "TITLE": "Real Estate Website",
       "DESCRIPTION": "A modern real estate agency website for renting and buying properties."
     }
-  }
+  },
+
+      "ABOUT_SECTION": {
+        "Main": {
+          "TITLE": "About Web Style",
+          "DESCRIPTION": "I’m Boaz, a web developer with a strong background in software studies. I fell in love with web development early on and decided that helping businesses thrive online was my calling.<br> I opened web style with the goal of doing what I love and helping businesses grow and increase their advertising. <br> I specialize in creating high-quality, customized websites using WordPress and Elementor, paying close attention to every detail—from concept and design to user experience—to ensure my clients are truly satisfied. <br><br> My passion is to help clients see real, tangible results. That’s why I make sure every website I build reflects the unique style and identity of the business, ultimately delivering genuine value to the client."
+        }
+      }
 }

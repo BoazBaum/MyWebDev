@@ -1,0 +1,15 @@
+
+div{
+    color: #021614;
+    font-family: rubik;
+}
+
+.description{
+    font-size: 20px;
+}
+
+@media(max-width:480px){
+    .description{
+        font-size: 15px;
+    }
+}

@@ -13,6 +13,7 @@ import { HomeProccesseWebBuildComponent } from './home-proccesse-web-build/home-
 import { HomeScreensDesigenComponent } from './home-screens-desigen/home-screens-desigen.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeOurWorkComponent } from './home-our-work/home-our-work.component';
+import { HomeAboutComponent } from './home-about/home-about.component';
 
 
 
@@ -29,7 +30,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeProccesseWebBuildComponent,
     HomeScreensDesigenComponent,
     FooterComponent,
-    HomeOurWorkComponent
+    HomeOurWorkComponent,
+    HomeAboutComponent
   ],
   imports: [
     HttpClientModule,  // Add HttpClientModule
