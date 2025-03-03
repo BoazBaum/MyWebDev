@@ -27,7 +27,7 @@
     <li class="mx-4">
       {{'Contact' | translate}}
     </li>
-    <li class="mx-4">
+    <li class="mx-4" (click)="scrollToSection('our-work')">
       {{'Protfolio' | translate}}
     </li>
   </ul>
@@ -44,9 +44,6 @@
         </li>
         <li class="dropdown-item" (click)="onLanguageSelect('en')">
           <img src="../../assets/england-flag.png" alt="English" class="flag-icon"> English
-        </li>
-        <li class="dropdown-item" (click)="onLanguageSelect('es')">
-          <img src="../../assets/Flag_of_Spain 1.png" alt="Spanish" class="flag-icon"> Spanish
         </li>
       </ul>
     </div>

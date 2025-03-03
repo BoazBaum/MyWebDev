@@ -4,31 +4,39 @@
             <!-- [class.fixed-navbar]="isFixed" -->
             <app-nav-bar [class.fixed-navbar]="isFixed" ></app-nav-bar>
         </div>
-        <div class="open-screen-content container d-flex  justify-content-center ">
-            <div class="row content align-items-center justify-content-center">
-                <div class="col-12 col-lg-6">
-                    <h1 class="text-open-screen">
-                        {{'welcome_message' | translate}}
-                    </h1>
-                    <div class="bolds d-flex mt-4">
-                        <img class="check-img  " src="../../assets/check icon.png" alt="check">
-                        <p class="mx-2">
-                            {{'welcome_message bold1' | translate}}
-                        </p>
-                        <img class="check-img" src="../../assets/check icon.png" alt="check">
-                        <p class="mx-2">
-                            {{'welcome_message bold2' | translate}}
-                        </p>
-                        <img class="check-img" src="../../assets/check icon.png" alt="check">
-                        <p class="mx-2">
-                            {{'welcome_message bold3' | translate}}
-                        </p>
+            <div class="open-screen-content container d-flex justify-content-center">
+                <div class="row content align-items-center justify-content-center">
+
+                    <!-- Left Column -->
+                    <div class="col-12 col-lg-6 d-flex flex-column">
+                        <!-- <div class=" trapeze-shape">
+                            <img src="../../assets/Trapeze shape.png" alt="">
+                        </div>
+                         -->
+                        <h1 class="text-open-screen">
+                            {{'welcome_message' | translate}}
+                        </h1>
+
+                        <div class="bolds d-flex mt-4">
+                            <img class="check-img" src="../../assets/check icon.png" alt="check">
+                            <p class="mx-2">{{'welcome_message bold1' | translate}}</p>
+
+                            <img class="check-img" src="../../assets/check icon.png" alt="check">
+                            <p class="mx-2">{{'welcome_message bold2' | translate}}</p>
+
+                            <img class="check-img" src="../../assets/check icon.png" alt="check">
+                            <p class="mx-2">{{'welcome_message bold3' | translate}}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-6 text-center ">
-                    <img class="main-img" src="../../assets/Building Website (4).png" alt="...">
+
+                    <!-- Right Column -->
+                    <div class="col-12 col-lg-6 text-center">
+                        <img class="main-img" src="../../assets/Building Website (4).png" alt="...">
+                    </div>
+
                 </div>
             </div>
-        </div>
+
+
     </div>
 </div>
