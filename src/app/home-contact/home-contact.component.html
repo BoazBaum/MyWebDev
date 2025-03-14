@@ -1,0 +1,51 @@
+<div class="container my-5" id="home-contact">
+    <h2 class="mb-4 text-center">
+        {{ 'CONTACT.TITLE' | translate }}
+    </h2>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="mx-auto" style="max-width: 500px;">
+
+        <!-- Name -->
+        <div class="form-group m-2">
+            <label for="name">
+                {{ 'CONTACT.LABEL_NAME' | translate }}
+            </label>
+            <input type="text" id="name" class="form-control" formControlName="name"
+                [placeholder]="('CONTACT.PLACEHOLDER_NAME' | translate)" />
+            <!-- Validation errors for Name -->
+            <div class="text-danger" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                {{ 'CONTACT.REQUIRED_NAME' | translate }}
+            </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group m-2">
+            <label for="phone">
+                {{ 'CONTACT.LABEL_PHONE' | translate }}
+            </label>
+            <input type="tel" id="phone" class="form-control" formControlName="phone"
+                [placeholder]="('CONTACT.PLACEHOLDER_PHONE' | translate)" />
+            <!-- Validation errors for Phone -->
+            <div class="text-danger" *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">
+                {{ 'CONTACT.REQUIRED_PHONE' | translate }}
+            </div>
+        </div>
+
+        <!-- Message (Optional) -->
+        <div class="form-group m-2">
+            <label for="message">
+                {{ 'CONTACT.MESSAGE_OPTIONAL' | translate }}
+            </label>
+            <textarea id="message" class="form-control" rows="4" formControlName="message"
+                [placeholder]="('CONTACT.PLACEHOLDER_MESSAGE' | translate)"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="button">
+            <button type="submit" class="btn m-1 mx-2 custom-btn" [disabled]="contactForm.invalid">
+                {{ 'CONTACT.BUTTON_SUBMIT' | translate }}
+            </button>
+         </div>
+
+    </form>
+</div>

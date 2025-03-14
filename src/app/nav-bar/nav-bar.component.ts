@@ -9,36 +9,40 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavBarComponent {
 
-
-  selectedFlag: string;
+  selectedFlag: string | undefined;
 
   constructor(private translate: TranslateService) {
+    // Attempt to retrieve the last-used language from localStorage
+    const savedLanguage = localStorage.getItem('userLanguage');
     
-    const defaultLanguage = 'he'; // Your default language
-    this.translate.setDefaultLang(defaultLanguage);
-    this.adjustDirection(defaultLanguage);
-    this.selectedFlag = '../../assets/israel-flag.png';
+    // If there is a saved language, use it.
+    // Otherwise, use your default (he).
+    if (savedLanguage) {
+      this.translate.use(savedLanguage);
+      this.adjustDirection(savedLanguage);
+      this.setFlag(savedLanguage);
+    } else {
+      const defaultLanguage = 'he'; // or whatever default you want
+      this.translate.setDefaultLang(defaultLanguage);
+      this.adjustDirection(defaultLanguage);
+      this.setFlag(defaultLanguage);
+    }
   }
 
   onLanguageSelect(language: string) {
+    // Use the chosen language
     this.translate.use(language);
     this.adjustDirection(language);
+    this.setFlag(language);
 
-    // Set flag based on selected language
-    if (language === 'he') {
-      this.selectedFlag = '../../assets/israel-flag.png';
-    } else if (language === 'en') {
-      this.selectedFlag = '../../assets/england-flag.png';
-    }
-    else{
-      this.selectedFlag = '../../assets/Flag_of_Spain 1.png';
-    }
+    // Persist the user's choice in localStorage
+    localStorage.setItem('userLanguage', language);
   }
+
   adjustDirection(language: string) {
     const isRtl = RTL_LANGUAGES.includes(language);
     document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
 
-    // Add or remove class to control the transform direction
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el: Element) => {
       if (isRtl) {
@@ -51,6 +55,15 @@ export class NavBarComponent {
     });
   }
 
+  setFlag(language: string) {
+    if (language === 'he') {
+      this.selectedFlag = '../../assets/israel-flag.png';
+    } else if (language === 'en') {
+      this.selectedFlag = '../../assets/england-flag.png';
+    } else {
+      this.selectedFlag = '../../assets/Flag_of_Spain 1.png';
+    }
+  }
 
   scrollToSection(sectionId: string): void {
     const section = document.getElementById(sectionId);

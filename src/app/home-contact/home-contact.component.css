@@ -1,0 +1,17 @@
+
+.button{
+    cursor: pointer;
+    color: #EDFFFD;
+}
+
+.custom-btn {
+    background-color: #016157;
+    color: #EDFFFD;
+    border: none;
+    width: 80px;
+}
+
+.custom-btn:hover {
+    background-color: #02AA99;
+    /* Slightly darker red on hover */
+}

@@ -1,54 +1,108 @@
-.desigen-screens{
-    white-space: nowrap;
-    display: flex;
-    position: relative;
-    direction: ltr;
-  }
 
-  .desigen-screens img{
-    margin: 50px;
-    height: 10rem;
-  }
 
+.main {
+  position: relative;
+  /* Ensure .main is the positioning context */
+  background-color: #5FE3D6;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* optionally give it a min-height or rely on children for height */
+}
+
+/* Make the pseudo-elements narrower so they only fade the corners */
+.main::before,
+.main::after {
+  position: absolute;
+  top: 0;
+  width: 190px;
+  /* narrower corner fade */
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+/* LEFT corner: gradient going from #EDFFFD to transparent */
+.main::before {
+  left: 0;
+  background: linear-gradient(to right,
+      /* direction: left side is opaque, right side is transparent */
+      #EDFFFD 15%,
+      /* 15% of the width is #EDFFFD */
+      rgba(237, 255, 253, 0) 100%
+      /* then fades out to transparent */
+    );
+}
+
+/* RIGHT corner: gradient going from #EDFFFD to transparent */
+.main::after {
+  right: 0;
+  background: linear-gradient(to left,
+      /* direction: right side is opaque, left side is transparent */
+      #EDFFFD 15%,
+      /* 15% is #EDFFFD */
+      rgba(237, 255, 253, 0) 100%);
+}
+
+
+.desigen-screens-text {
+  text-align: center;
+  margin: 2rem 0;
+  /* Space above/below the text */
+}
+
+.desigen-screens-text h2 {
+  margin-bottom: 1rem;
+}
+
+.desigen-screens {
+  /* Hide overflow so images outside the visible area don't show */
+  overflow: hidden;
+  width: 100%;
+  /* or whatever width you want */
+  position: relative;
+  display: flex;
+  /* so .desigen-screens-slide can line up */
+  direction: ltr;
+  /* ensure the marquee goes leftwards in a left-to-right system */
+}
+
+/* The container that holds all images (two sets worth) */
 .desigen-screens-slide {
-    animation: slide 10s infinite linear; 
-  }
-  
-  @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  
-  .desigen-screens:before,
-  .desigen-screens:after{
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 1;
+  display: inline-flex;
+  white-space: nowrap;
+  animation: slide 12s linear infinite;
+}
+
+/* Basic styling for the images */
+.desigen-screens img {
+  margin: 50px;
+  height: 10rem;
+}
+
+/* The marquee animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
 
-  .desigen-screens:before{
-    background: linear-gradient(to left, rgba(241, 255, 241, 0),  #EDFFFD);
-    left: 0;
+  100% {
+    /* Move left by 50% of the total width (because we duplicated the images) */
+    transform: translateX(-50%);
   }
-  .desigen-screens:after{
-    background: linear-gradient(to right, rgba(241, 255, 241, 0),  #EDFFFD);
-    right: 0;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .desigen-screens img {
+    margin: 10px;
+    height: 7rem;
   }
 
-    @media (max-width: 480px) {
-      .desigen-screens img {
-        margin: 10px;
-        height: 7rem;
-      }
-      .desigen-screens:before,
-      .desigen-screens:after {
-        width: 0px;
-      }
-    }
+  .main::before,
+  .main::after {
+    width: 0px;
+  }
+}

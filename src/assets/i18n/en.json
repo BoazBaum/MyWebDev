@@ -61,5 +61,18 @@
           "TITLE": "About Web Style",
           "DESCRIPTION": "I’m Boaz, a web developer with a strong background in software studies. I fell in love with web development early on and decided that helping businesses thrive online was my calling.<br> I opened web style with the goal of doing what I love and helping businesses grow and increase their advertising. <br> I specialize in creating high-quality, customized websites using WordPress and Elementor, paying close attention to every detail—from concept and design to user experience—to ensure my clients are truly satisfied. <br><br> My passion is to help clients see real, tangible results. That’s why I make sure every website I build reflects the unique style and identity of the business, ultimately delivering genuine value to the client."
         }
+      },
+
+      "CONTACT": {
+        "TITLE": "Let's talk",
+        "LABEL_NAME": "Full Name",
+        "PLACEHOLDER_NAME": "Enter your full name",
+        "LABEL_PHONE": "Phone",
+        "PLACEHOLDER_PHONE": "Enter your phone number",
+        "MESSAGE_OPTIONAL": "Message (optional)",
+        "PLACEHOLDER_MESSAGE": "Type anything...",
+        "REQUIRED_NAME": "Full name is required.",
+        "REQUIRED_PHONE": "Phone number is required.",
+        "BUTTON_SUBMIT": "Send"
       }
 }

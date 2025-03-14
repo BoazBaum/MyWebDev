@@ -14,6 +14,8 @@ import { HomeScreensDesigenComponent } from './home-screens-desigen/home-screens
 import { FooterComponent } from './footer/footer.component';
 import { HomeOurWorkComponent } from './home-our-work/home-our-work.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
+import { HomeContactComponent } from './home-contact/home-contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -31,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeScreensDesigenComponent,
     FooterComponent,
     HomeOurWorkComponent,
-    HomeAboutComponent
+    HomeAboutComponent,
+    HomeContactComponent
   ],
   imports: [
     HttpClientModule,  // Add HttpClientModule
@@ -40,11 +43,12 @@ export function HttpLoaderFactory(http: HttpClient) {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
-      }
+      },
     }),
     
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
