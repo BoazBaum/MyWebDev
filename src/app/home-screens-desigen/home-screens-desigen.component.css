@@ -5,22 +5,26 @@
   /* Ensure .main is the positioning context */
   background-color: #5FE3D6;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #021614;
+  font-family: rubik;
   /* optionally give it a min-height or rely on children for height */
 }
 
+.description {
+  font-size: 20px;
+}
 /* Make the pseudo-elements narrower so they only fade the corners */
-.main::before,
+/* .main::before,
 .main::after {
   position: absolute;
   top: 0;
   width: 190px;
-  /* narrower corner fade */
   height: 100%;
   content: "";
   z-index: 1;
-}
+} */
 
 /* LEFT corner: gradient going from #EDFFFD to transparent */
 .main::before {
