@@ -66,9 +66,17 @@ export class NavBarComponent {
   }
 
   scrollToSection(sectionId: string): void {
+    // 1. Perform the smooth scroll
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+
+    // 2. Uncheck the #chk1 box to close the menu
+    const menuCheckbox = document.getElementById('chk1') as HTMLInputElement;
+    if (menuCheckbox) {
+      menuCheckbox.checked = false;
+    }
   }
+
 }

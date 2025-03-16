@@ -10,7 +10,7 @@
 }
 
 .card{
-    height: 350px;
+    height: 400px;
 }
 
 /* Hover effect */
@@ -23,4 +23,12 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.work-card .btn {
+    color: #EDFFFD;
+    background-color: #016157;
+}
+.work-card .btn:hover {
+    background-color: #02AA99;
 }
